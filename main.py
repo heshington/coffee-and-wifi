@@ -17,8 +17,8 @@ class CafeForm(FlaskForm):
     opening = StringField('Opening Time eg 8AM', validators=[DataRequired()])
     closing = StringField('Closing Time eg 5:30PM', validators=[DataRequired()])
     coffee_rating = SelectField(u'Coffee Rating', choices=[('✘'),('☕'), ('☕☕'),('☕☕☕'), ('☕☕☕☕') ])
-    wifi_strength =  SelectField(u'Wifi Strength Rating', choices=[('✘'),('💪'), ('💪💪'),('💪💪💪'), ('💪💪💪💪') ])
-    power =  SelectField(u'Power Socket availability', choices=[('✘'),('🔌'), ('🔌🔌'),('🔌🔌🔌'), ('🔌🔌🔌🔌') ])
+    wifi_strength = SelectField(u'Wifi Strength Rating', choices=[('✘'),('💪'), ('💪💪'),('💪💪💪'), ('💪💪💪💪') ])
+    power = SelectField(u'Power Socket availability', choices=[('✘'),('🔌'), ('🔌🔌'),('🔌🔌🔌'), ('🔌🔌🔌🔌') ])
     submit = SubmitField('Submit')
 
 # Exercise:
